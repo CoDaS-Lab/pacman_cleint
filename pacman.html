@@ -215,7 +215,9 @@
             }
 
             this.current = direction;
-
+            console.log("DIRECTION", this.current);
+            console.log("MOVE x", this.pacman.x)
+            console.log("MOVE y", this.pacman.y)
         },
 
         eatDot: function (pacman, dot) {
@@ -230,7 +232,7 @@
         },
 
         update: function () {
-          
+
             this.physics.arcade.collide(this.pacman, this.layer);
             this.physics.arcade.overlap(this.pacman, this.dots, this.eatDot, null, this);
 
