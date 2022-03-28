@@ -14,7 +14,7 @@
     <script type="text/javascript">
 
     var game = new Phaser.Game(896, 992, Phaser.CANVAS, 'game');
-    const socket = io("http://127.0.0.1:5000", {transports: ['websocket']})
+    const socket = io("https://pacman-api.herokuapp.com", {transports: ['websocket']})
 // width, height
     var PhaserGame = function (game) {
 
